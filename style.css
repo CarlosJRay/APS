@@ -1,0 +1,241 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --verde-principal: #2B7A4B;
+    --verde-secundario: #5AAE76;
+    --verde-claro: #DFF2E3;
+    --cor-texto: #333333;
+    --cor-fundo: #F9F9F9;
+    --sombra: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins-Regular.woff2') format('woff2'), 
+         url('fonts/Poppins-Regular.woff') format('woff');
+    font-display: swap;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--verde-principal);
+    margin-bottom: 1.5rem;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.navbar {
+    background: white;
+    padding: 1rem 0;
+    box-shadow: var(--sombra);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.logo {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--verde-principal);
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    transition: transform 0.3s ease-out;
+}
+
+.nav-links a {
+    color: var(--cor-texto);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a[aria-current="page"] {
+    color: var(--verde-secundario);
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.content-section {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--sombra);
+    margin: 2rem 0;
+}
+
+.lista-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.card {
+    background: var(--verde-claro);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--verde-principal);
+}
+
+.btn-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+}
+
+.btn {
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background: var(--verde-principal);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: var(--verde-secundario);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(43, 122, 75, 0.3);
+}
+
+.footer {
+    background: var(--verde-claro);
+    padding: 2rem 0;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.footer p {
+    color: var(--cor-texto);
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: var(--verde-claro);
+}
+
+.social-link {
+    color: var(--cor-texto);
+    font-size: 1.8rem;
+    transition: opacity 0.3s ease;
+    padding: 0.5rem;
+}
+
+.social-link:hover {
+    opacity: 0.8;
+    color: var(--verde-secundario);
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        padding: 1rem;
+        text-align: center;
+        box-shadow: var(--sombra);
+        transform: translateY(-100%);
+    }
+
+    .nav-links.active {
+        display: flex;
+        transform: translateY(0);
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .lista-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .content-section {
+        padding: 1.5rem;
+    }
+}
+
+@keyframes entradaSuave {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate {
+    animation: entradaSuave 0.6s ease-out;
+    will-change: transform, opacity;
+}

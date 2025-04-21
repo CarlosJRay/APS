@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon(3).ico" type="image/x-icon">
+    <title>Técnicas de Plantio de Soja</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">SojaTec</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="elementos.html">Elementos</a>
+                <a href="tecnicas.html">Técnicas</a>
+                <a href="otimizaçao.html">Otimização</a>
+                <a href="videos.html">Vídeos</a>
+            </div>
+            <div class="mobile-menu">☰</div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="content-section animate">
+            <h1>Técnicas de Plantio de Soja</h1>
+            
+            <div class="card">
+                <h2>Plantio Direto</h2>
+                <div class="lista-grid">
+                    <div>
+                        <h3>Vantagens</h3>
+                        <ul>
+                            <li>Redução de 90% na erosão</li>
+                            <li>Aumento de 20-30% na retenção de umidade</li>
+                            <li>Economia de 30% em combustível</li>
+                            <li>Seqüestro de 2-3 t CO₂/ha/ano</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Implementação</h3>
+                        <ul>
+                            <li>Palhada uniforme (>5 t/ha)</li>
+                            <li>Semeadora-adubadora específica</li>
+                            <li>Rotacão com milho/braquiária</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Agricultura de Precisão</h2>
+                <div class="lista-grid">
+                    <div>
+                        <h3>Tecnologias</h3>
+                        <ul>
+                            <li>Mapeamento por satélite (NDVI)</li>
+                            <li>Drones para pulverização seletiva</li>
+                            <li>Sensores de solo inteligentes</li>
+                            <li>Aplicação de taxa variável</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Benefícios</h3>
+                        <ul>
+                            <li>Redução de 15-20% no uso de insumos</li>
+                            <li>Aumento de 5-8% na produtividade</li>
+                            <li>Monitoramento em tempo real</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Configurações Ideais</h2>
+                <div class="lista-grid">
+                    <div>
+                        <h3>Espaçamento</h3>
+                        <ul>
+                            <li>Entre linhas: 45-50 cm</li>
+                            <li>Profundidade: 3-5 cm</li>
+                            <li>Densidade: 12-16 plantas/m</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Ajustes Especiais</h3>
+                        <ul>
+                            <li>Solos arenosos: +10% de sementes</li>
+                            <li>Cultivares precoces: até 18 plantas/m</li>
+                            <li>Plantio tardio: reduzir 2 plantas/m</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn-container">
+                <a href="elementos.html" class="btn btn-primary">&lt; Voltar</a>
+                <a href="otimizaçao.html" class="btn btn-primary">Otimização &gt;</a>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.querySelector('.mobile-menu').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

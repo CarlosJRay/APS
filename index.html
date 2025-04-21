@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon(3).ico" type="image/x-icon">
+    <title>Plantio Agrícola da Soja</title>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@400;500;600&display=swap" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar" aria-label="Navegação principal">
+        <div class="nav-container">
+            <div class="logo">SojaTec</div>
+            <div class="nav-links">
+                <a href="index.html" aria-current="page">Home</a>
+                <a href="elementos.html">Elementos</a>
+                <a href="tecnicas.html">Técnicas</a>
+                <a href="otimizaçao.html">Otimização</a>
+                <a href="videos.html">Vídeos</a>
+            </div>
+            <button class="mobile-menu" aria-label="Abrir menu" aria-expanded="false">☰</button>
+        </div>
+    </nav>
+
+    <main id="main-content" class="container">
+        <section class="content-section animate">
+            <h1>Guia de Plantio de Soja</h1>
+            <p class="destaque-texto">A soja é uma das culturas mais importantes do agronegócio brasileiro. Este guia apresenta informações técnicas para auxiliar agricultores no plantio eficiente.</p>
+            
+            <div class="lista-grid">
+                <div class="card">
+                    <h2>O que é Plantio Agrícola</h2>
+                    <p>Processo sistemático de introdução de sementes ou mudas no solo preparado, envolvendo:</p>
+                    <ol type="I">
+                        <li><ins>Seleção genética</ins></li>
+                        <li><ins>Preparação do solo</ins></li>
+                        <li><ins>Semeadura</ins></li>
+                        <li><ins>Manejo inicial</ins></li>
+                    </ol>
+                </div>
+
+                <div class="card">
+                    <h2>Importância do Planejamento</h2>
+                    <div class="lista-grid">
+                        <div>
+                            <h3>Benefícios:</h3>
+                            <ul>
+                                <li>+20-30% produtividade</li>
+                                <li>-30% perdas climáticas</li>
+                                <li>Otimização de recursos</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Fatores Críticos:</h3>
+                            <ul>
+                                <li>Análise climática</li>
+                                <li>Zoneamento agrícola</li>
+                                <li>Logística de colheita</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn-container">
+                <a href="elementos.html" class="btn btn-primary">Elementos Necessários</a>
+                <a href="tecnicas.html" class="btn btn-primary">Técnicas de Plantio</a>
+                <a href="otimizaçao.html" class="btn btn-primary">Otimização de Recursos</a>
+                <a href="videos.html" class="btn btn-primary">Vídeos Instrucionais</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <p>&copy; 2025 BahTec. Todos os direitos reservados.</p>
+            <p>Desenvolvido por <strong>BahTec Team</strong></p>
+            <p>Contato: <a href="mailto:contato@bahtec.com">contato@bahtec.com</a></p>
+            <p>Telefone: <a href="tel:+5517981303279">(17) 98130-3279</a></p>
+        </div>
+        <div class="social-media">
+            <a class="social-link social-facebook" href="https://www.facebook.com/bahtec" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a class="social-link social-youtube" href="https://www.youtube.com/bahtec" target="_blank" aria-label="YouTube">
+                <i class="fab fa-youtube" aria-hidden="true"></i>
+            </a>
+            <a class="social-link social-whatsapp" href="https://api.whatsapp.com/send?phone=5517981303279" target="_blank" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp" aria-hidden="true"></i>
+            </a>
+            <a class="social-link social-telegram" href="https://t.me/bahtec" target="_blank" aria-label="Telegram">
+                <i class="fab fa-telegram" aria-hidden="true"></i>
+            </a>     
+            <a class="social-link social-instagram" href="https://www.instagram.com/bahtec" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script>
+    
+        const menuButton = document.querySelector('.mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuButton.addEventListener('click', function() {
+            const expanded = this.getAttribute('aria-expanded') === 'true';
+            this.setAttribute('aria-expanded', !expanded);
+            navLinks.classList.toggle('active');
+        });
+
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+        const observerCallback = (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                    observer.unobserve(entry.target);
+                }
+            });
+        };
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate');
+            }
+        });
+    });
+
+    document.querySelectorAll('.animate-on-scroll').forEach(el => {
+        observer.observe(el);
+    });
+    </script>
+</body>
+</html>

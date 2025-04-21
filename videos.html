@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon(3).ico" type="image/x-icon">
+    <title>Vídeos Instrucionais</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">SojaTec</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="elementos.html">Elementos</a>
+                <a href="tecnicas.html">Técnicas</a>
+                <a href="otimizaçao.html">Otimização</a>
+                <a href="videos.html">Vídeos</a>
+            </div>
+            <div class="mobile-menu">☰</div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="content-section animate">
+            <h1>Vídeos Instrucionais</h1>
+            
+            <div class="video-grid">
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/mWNKkpQE2pA" 
+                        title="Técnicas de Plantio Direto" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/AzyGjkgEvYo" 
+                        title="Plantio Convencional de Soja" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/h3YnLPcc9D0" 
+                        title="Comparação de Métodos" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/KhVnni3yMFk" 
+                        title="Ciclo Completo da Soja" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="btn-container">
+                <a href="otimizaçao.html" class="btn btn-primary">&lt; Voltar</a>
+                <a href="index.html" class="btn btn-primary">Menu Inicial</a>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.querySelector('.mobile-menu').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

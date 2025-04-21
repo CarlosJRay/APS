@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon(3).ico" type="image/x-icon">
+    <title>Elementos para Plantio de Soja</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">SojaTec</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="elementos.html">Elementos</a>
+                <a href="tecnicas.html">Técnicas</a>
+                <a href="otimizaçao.html">Otimização</a>
+                <a href="videos.html">Vídeos</a>
+            </div>
+            <div class="mobile-menu">☰</div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="content-section animate">
+            <h1>Elementos Necessários para o Plantio</h1>
+            
+            <div class="card">
+                <h2>Calendário Agrícola</h2>
+                <div class="lista-grid">
+                    <div>
+                        <h3>Épocas por Região</h3>
+                        <ul>
+                            <li>Centro-Oeste: 20/09 - 30/11</li>
+                            <li>Sul: 01/10 - 15/12</li>
+                            <li>Sudeste: 15/09 - 30/11</li>
+                            <li>Nordeste: 01/11 - 15/01</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Condições Ideais</h3>
+                        <ul>
+                            <li>>50mm de chuva em 10 dias</li>
+                            <li>Temperatura >18°C</li>
+                            <li>12h+ de luz diária</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Preparo do Solo</h2>
+                <div class="lista-grid">
+                    <div>
+                        <h3>Análise e Correção</h3>
+                        <ol>
+                            <li>Amostras 0-20cm e 20-40cm</li>
+                            <li>pH ideal 6.0-6.5</li>
+                            <li>Correção com calcário</li>
+                        </ol>
+                    </div>
+                    <div>
+                        <h3>Técnicas</h3>
+                        <ul>
+                            <li>Aração (20-25cm)</li>
+                            <li>Gradagem niveladora</li>
+                            <li>Plantio Direto</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Sementes e Inoculação</h2>
+                <div class="lista-grid">
+                    <div>
+                        <h3>Especificações</h3>
+                        <ul>
+                            <li>Pureza >98%</li>
+                            <li>Germinação >80%</li>
+                            <li>Tratamento com fungicidas</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Inoculação</h3>
+                        <ul>
+                            <li>Bradyrhizobium japonicum</li>
+                            <li>1.2 milhão células/semente</li>
+                            <li>Fixar 80-120kg N/ha</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn-container">
+                <a href="index.html" class="btn btn-primary">&lt; Voltar</a>
+                <a href="tecnicas.html" class="btn btn-primary">Técnicas de Plantio &gt;</a>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.querySelector('.mobile-menu').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
