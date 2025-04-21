@@ -18,9 +18,6 @@ Este projeto tem como objetivo aplicar os conhecimentos adquiridos ao longo do c
 A organização do repositório é a seguinte:
 
 ```
-/src    - Código-fonte do projeto.
-/docs   - Documentação detalhada.
-/tests  - Scripts e casos de teste.
 /README.md - Informações gerais sobre o projeto.
 ```
 
@@ -28,9 +25,8 @@ A organização do repositório é a seguinte:
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **Linguagem de Programação**: [Especifique aqui]
-- **Frameworks e Bibliotecas**: [Especifique aqui]
-- **Ferramentas de Desenvolvimento**: [Especifique aqui]
+- **Linguagem de desenvolvimento:** Html e css
+- **Ferramentas de Desenvolvimento**: Vscode e favicon.
 
 ---
 
@@ -52,14 +48,16 @@ Siga os passos abaixo para executar o projeto:
 
 ## 👥 Contribuidores
 
-- **[Seu Nome]** - RA: [Seu RA]
-- **[Outros Contribuidores, se houver]**
+- **Carlos Júnior raymundo** - RA: H10bgg7
+- **Emerson Ricardo de Jesus** - RA: H10bgg7
+- **Murillo Dias Ribeiro** - RA: H10bgg7
+- **Victor Hugo Dezan** - RA: H10bgg7
 
 ---
 
 ## 📜 Licença
 
-Este projeto está licenciado sob a **[Licença que você escolher]**. Para mais detalhes, consulte o arquivo `LICENSE`.
+Este projeto está licenciado sob a **GNU General Public License v3.0 (GNU GPLv3)**. Para mais detalhes, consulte o arquivo `LICENSE`.
 
 ---
 
