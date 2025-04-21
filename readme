@@ -1,0 +1,66 @@
+# Atividade Prática Supervisionada (APS)
+
+Bem-vindo ao repositório do projeto desenvolvido como parte da **Atividade Prática Supervisionada (APS)** do curso de **Ciência da Computação** da **Universidade Paulista (UNIP)**, campus **São José do Rio Preto**.
+
+---
+
+## 🎯 Objetivo do Projeto
+
+Este projeto tem como objetivo aplicar os conhecimentos adquiridos ao longo do curso em um problema prático, promovendo:
+- O desenvolvimento de habilidades técnicas.
+- A integração de conceitos teóricos.
+- A resolução de desafios reais.
+
+---
+
+## 🗂️ Estrutura do Projeto
+
+A organização do repositório é a seguinte:
+
+```
+/src    - Código-fonte do projeto.
+/docs   - Documentação detalhada.
+/tests  - Scripts e casos de teste.
+/README.md - Informações gerais sobre o projeto.
+```
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- **Linguagem de Programação**: [Especifique aqui]
+- **Frameworks e Bibliotecas**: [Especifique aqui]
+- **Ferramentas de Desenvolvimento**: [Especifique aqui]
+
+---
+
+## 🚀 Como Executar
+
+Siga os passos abaixo para executar o projeto:
+
+1. Clone este repositório:
+    ```bash
+    git clone https://github.com/seu-usuario/seu-repositorio.git
+    ```
+2. Acesse o diretório do projeto:
+    ```bash
+    cd seu-repositorio
+    ```
+3. Consulte o arquivo `/docs/guia-de-execucao.md` para instruções detalhadas.
+
+---
+
+## 👥 Contribuidores
+
+- **[Seu Nome]** - RA: [Seu RA]
+- **[Outros Contribuidores, se houver]**
+
+---
+
+## 📜 Licença
+
+Este projeto está licenciado sob a **[Licença que você escolher]**. Para mais detalhes, consulte o arquivo `LICENSE`.
+
+---
+
+💡 *Sinta-se à vontade para contribuir com melhorias ou sugestões!*
